@@ -2,8 +2,14 @@
 
 import math
 
-raio = float(input("Informe o raio da circunferência: "))
 
-area = math.pi * raio ** 2
+def calcular_area_circunferencia(raio):
 
-print(f"A área de uma circunferência de {raio} é {round(area,2)}")
+    area = math.pi * raio ** 2
+
+    print(f"A área de uma circunferência de {raio} é {round(area,2)}")
+
+
+raio_usuario = float(input("Informe o raio: "))
+
+calcular_area_circunferencia(raio_usuario)
