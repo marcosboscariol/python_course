@@ -14,7 +14,9 @@ while True:
 
 
 soma = 0
-for i in range(len(str(numero_usuario))):
+i = 0
+while i < (len(str(numero_usuario))):
     soma += int(str(numero_usuario)[i])
+    i += 1
 
 print(f'A soma dos diítos do número {numero_usuario} é {soma}')
